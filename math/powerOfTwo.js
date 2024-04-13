@@ -8,3 +8,11 @@ const isPowerOfTwo = (n) => {
    }
    return true;
  }
+
+  // bitwise solution
+ // In binary power of two except for 1 ends with 0
+ // By trying bitwise and operator with the number 
+ const isBitwisePowerOfTwo = (n) => {
+    if(n<=0) return false;
+    return (n & (n-1)) === 0;
+ }
